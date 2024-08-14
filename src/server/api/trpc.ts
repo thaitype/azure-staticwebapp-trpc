@@ -38,7 +38,7 @@ export function createContext({ context, request }: AzureFunctionsContextOption)
  * errors on the backend.
  */
 export const t = initTRPC.context<typeof createContext>().create({
-  transformer: superjson,
+  // transformer: superjson,
   errorFormatter({ shape, error }) {
     return {
       ...shape,
