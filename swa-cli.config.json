@@ -1,0 +1,14 @@
+{
+  "$schema": "https://aka.ms/azure/static-web-apps-cli/schema",
+  "configurations": {
+    "azure-staticwebapp": {
+      "appLocation": ".",
+      "apiLocation": "./src/server",
+      "outputLocation": "./dist",
+      "apiLanguage": "node",
+      "apiVersion": "20",
+      "appName": "thw-demo-serverless-front",
+      "resourceGroup": "rg-demo-serverless-app"
+    }
+  }
+}

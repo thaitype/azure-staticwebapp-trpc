@@ -48,3 +48,6 @@ yarn-error.log*
 t3-stack-example
 
 dist
+
+# Azure Functions Build Output
+src/server/dist
