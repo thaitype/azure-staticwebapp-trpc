@@ -3,7 +3,7 @@
   "configurations": {
     "azure-staticwebapp": {
       "appLocation": ".",
-      "apiLocation": "./src/server",
+      "apiLocation": "./functions",
       "outputLocation": "./dist",
       "apiLanguage": "node",
       "apiVersion": "20"

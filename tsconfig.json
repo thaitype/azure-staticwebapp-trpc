@@ -46,6 +46,8 @@
     ".next/types/**/*.ts"
   ],
   "exclude": [
+    "dist",
+    "functions/dist",
     "node_modules",
     "t3-stack-example"
   ]
