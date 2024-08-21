@@ -12,9 +12,8 @@
     "build:api": "esbuild src/server/main.ts --bundle --platform=node --external:@azure/functions-core --outfile=src/server/dist/main.js",
     "dev": "run-p -l 'dev:*'",
     "dev:swa": "swa start http://localhost:5173 --run \"npm run start\" --api-location src/server --port 3000 --api-devserver-url http://127.0.0.1:3030",
-    "dev:func-watch": "run-s build:api && nodemon --watch src/server --ext ts --exec 'run-s build:api'",
-    "dev:watch": "nodemon --watch src/server/dist --delay 0.3 --exec 'npm run func-start'",
-    "func-start": "func start --prefix src/server/ --cors-credentials --port 3030"
+    "dev:func": "run-s build:api && nodemon --watch src/server --ext ts --exec 'run-s build:api'",
+    "dev:start": "func start -w --prefix src/server/ --cors-credentials --port 3030"
   },
   "dependencies": {
     "@tanstack/react-query": "^4.36.1",
