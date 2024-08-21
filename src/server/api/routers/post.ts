@@ -10,6 +10,7 @@ export const postRouter = createTRPCRouter({
       return {
         greeting: `Hellox ${input.text}`,
       };
+      
     }),
 
   create: publicProcedure

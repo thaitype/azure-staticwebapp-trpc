@@ -4,16 +4,15 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "format": "prettier -w src",
     "preview": "vite preview",
-    "build:api": "esbuild src/server/main.ts --bundle --platform=node --external:@azure/functions-core --outfile=src/server/dist/main.js",
+    "build:func": "esbuild src/server/main.ts --bundle --platform=node --external:@azure/functions-core --outfile=src/server/dist/main.js",
     "dev": "run-p -l 'dev:*'",
-    "dev:swa": "swa start http://localhost:5173 --run \"npm run start\" --api-location src/server --port 3000 --api-devserver-url http://127.0.0.1:3030",
-    "dev:func": "run-s build:api && nodemon --watch src/server --ext ts --exec 'run-s build:api'",
-    "dev:start": "func start -w --prefix src/server/ --cors-credentials --port 3030"
+    "dev:vite": "vite",
+    "dev:build": "run-s build:func && nodemon --watch src/server --ext ts --exec 'run-s build:func'",
+    "dev:func": "func start -w --prefix src/server/ --cors-credentials"
   },
   "dependencies": {
     "@tanstack/react-query": "^4.36.1",
