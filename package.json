@@ -13,7 +13,7 @@
     "dev": "run-p -l 'dev:*'",
     "dev:vite": "vite",
     "dev:func": "func start -w --prefix functions --cors-credentials",
-    "dev:build": "run-s func:build -- --watch",
+    "dev:build": "run-s build:func -- --watch",
     "deploy": "swa deploy"
   },
   "dependencies": {
