@@ -11,8 +11,11 @@ bun dev
 
 Open http://localhost:5173/
 
+Check it out https://victorious-water-019ecb600-preview.eastasia.5.azurestaticapps.net 
+
 ## Deploy
 ```
+bun run build
 bun run deploy --app-name thw-demo-serverless-front
 ```
 
