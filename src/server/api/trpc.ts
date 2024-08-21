@@ -6,9 +6,9 @@
  * TL;DR - This is where all the tRPC server stuff is created and plugged in. The pieces you will
  * need to use are documented accordingly near the end.
  */
-import { type AzureFunctionsContextOption } from 'trpc-azure-functions-adapter';
 import { initTRPC } from '@trpc/server';
 import superjson from "superjson";
+import type { AzureFunctionsContextOption } from 'trpc-azure-functions-adapter';
 import { ZodError } from "zod";
 
 /**

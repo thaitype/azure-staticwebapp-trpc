@@ -7,7 +7,7 @@ import './App.css';
 function App() {
   const [count, setCount] = useState(0);
 
-  const post = api.post.hello.useQuery({ text: "world" });
+  const post = api.post.hello.useQuery({ text: 'world' });
 
   return (
     <>

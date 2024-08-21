@@ -1,3 +1,4 @@
+import { c } from "node_modules/vite/dist/node/types.d-aGj9QkWt";
 import { z } from "zod";
 
 import { createTRPCRouter, publicProcedure } from "~/server/api/trpc";
@@ -5,7 +6,8 @@ import { createTRPCRouter, publicProcedure } from "~/server/api/trpc";
 export const postRouter = createTRPCRouter({
   hello: publicProcedure
     .input(z.object({ text: z.string() }))
-    .query(({ input }) => {
+    .query(({ input, ctx }) => {
+      ctx.context.log("Hello ", input.text);
       return {
         greeting: `Hellox ${input.text}`,
       };
@@ -19,5 +21,12 @@ export const postRouter = createTRPCRouter({
         message: `Post created: ${input.name}`,
       }
     }),
+
+  getLatest: publicProcedure.query(async ({ ctx }) => {
+    const post = {
+      title: "Hello XXX",
+    }
+    return post ?? null;
+  }),
 
 });
