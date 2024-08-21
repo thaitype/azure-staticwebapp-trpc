@@ -35,3 +35,7 @@ https://github.com/Azure/static-web-apps-cli/issues/736
 
 [Static Web Apps CLI: improve performance with Vite server proxy](https://johnnyreilly.com/static-web-apps-cli-improve-performance-with-vite-server-proxy)
   - Use Vite to proxy requests to the Azure Functions backend instead of the SWA CLI
+
+## T3 Stack
+
+Some code and patterns are inspired by the T3 Stack
