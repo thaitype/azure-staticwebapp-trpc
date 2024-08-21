@@ -38,4 +38,4 @@ https://github.com/Azure/static-web-apps-cli/issues/736
 
 ## T3 Stack
 
-Some code and patterns are inspired by the T3 Stack
+Some code and patterns are inspired by the T3 Stack, and Next.js Struture
