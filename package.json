@@ -14,9 +14,10 @@
     "dev:vite": "vite",
     "dev:func": "func start -w --prefix functions --cors-credentials",
     "dev:build": "run-s build:func -- --watch",
-    "deploy": "swa deploy"
+    "deploy": "swa deploy --env production"
   },
   "dependencies": {
+    "@azure/functions": "^4.5.0",
     "@tanstack/react-query": "^4.36.1",
     "@trpc/client": "^10.45.2",
     "@trpc/react-query": "^10.45.2",
