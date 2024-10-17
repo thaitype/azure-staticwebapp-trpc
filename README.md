@@ -41,6 +41,12 @@ https://github.com/Azure/static-web-apps-cli/issues/736
 }
 ```
 
+## Github Actions 
+Due to issue with Github Actions Azure/static-web-apps-deploy@v1 with file `staticwebapp.config.json`
+https://github.com/Azure/static-web-apps/issues/1452#issuecomment-2064670359 
+
+If we want to use the Github Actions, to add `staticwebapp.config.json` file with `{}` value
+
 ### SWA Alternatives
 
 [Static Web Apps CLI: improve performance with Vite server proxy](https://johnnyreilly.com/static-web-apps-cli-improve-performance-with-vite-server-proxy)
